@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pratyaksha Mehrotra — Legal Portfolio</title>
+<meta name="description" content="Pratyaksha Mehrotra — B.B.A. LL.B. (Hons.) candidate at Amity University, Uttar Pradesh. Corporate advisory, insolvency, arbitration, white-collar litigation and technology regulation.">
+<meta name="author" content="Pratyaksha Mehrotra">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add("js");try{if("scrollRestoration" in history)history.scrollRestoration="manual"}catch(e){}</script>
+<style>
+:root{
+  --ink:#0B0B0C; --charcoal:#17171A; --bone:#EDE9E1; --paper:#F6F5F2; --white:#FFFFFF;
+  --text:#141416; --muted:#6B6B70; --faint:#B5B2AC; --rule:#DFDCD6; --rule-d:#2A2A2E;
+  --blue:#1B3A6B; --blue-lit:#5C86C9; --blue-soft:#9FBCE9; --blue-pale:#DCE8F8;
+  --gutter:clamp(18px,5vw,72px); --max:1280px; --nav:58px;
+  --ease:cubic-bezier(.19,.86,.24,1);
+  --mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+html:focus-within{scroll-behavior:smooth}
+body{font-family:"Inter Tight",system-ui,-apple-system,sans-serif;background:var(--paper);color:var(--text);
+  font-size:1.0625rem;line-height:1.68;letter-spacing:-.005em;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;text-align:left}
+ul{list-style:none}
+section[id]{scroll-margin-top:var(--nav)}
+::selection{background:var(--blue);color:#fff}
+:focus-visible{outline:2px solid var(--blue-lit);outline-offset:3px;border-radius:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- PRIMITIVES ---------- */
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.mono{font-family:var(--mono);font-size:.7rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase}
+.sect-title{font-family:var(--mono);font-weight:400;font-size:clamp(.8rem,1.5vw,1rem);
+  letter-spacing:.42em;text-transform:uppercase;text-align:center;text-indent:.42em;color:var(--muted)}
+.dark .sect-title{color:#8E8B85}
+.display{display:block;font-weight:800;letter-spacing:-.055em;line-height:.86;text-transform:uppercase}
+.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;line-height:1.16}
+.ord{font-family:var(--mono);font-size:.72rem;font-weight:500;letter-spacing:.1em;color:var(--blue);
+  font-variant-numeric:tabular-nums}
+.dark .ord{color:var(--blue-lit)}
+
+.arrow{display:inline-flex;align-items:center;gap:14px;font-weight:500;letter-spacing:-.01em}
+.arrow i{position:relative;display:inline-block;width:42px;height:1px;background:currentColor;
+  transition:width .4s var(--ease)}
+.arrow i::after{content:"";position:absolute;right:0;top:-3px;width:7px;height:7px;
+  border-top:1px solid currentColor;border-right:1px solid currentColor;transform:rotate(45deg)}
+.arrow:hover i{width:62px}
+.arrow.acc{color:var(--blue)}
+.dark .arrow.acc{color:var(--blue-lit)}
+
+.pill{display:inline-flex;align-items:center;gap:14px;padding:15px 30px;border:1px solid currentColor;
+  border-radius:999px;font-size:.92rem;font-weight:500;letter-spacing:.01em;
+  transition:background .35s var(--ease),color .35s var(--ease)}
+.pill:hover{background:var(--bone);color:var(--ink)}
+
+/* ---------- M MONOGRAM ---------- */
+.mark{display:block;width:1em;height:1em;flex:none;overflow:visible}
+.mark path{fill:none;stroke-width:2.6;stroke-linecap:square;stroke-linejoin:miter;
+  vector-effect:non-scaling-stroke}
+.mark .a{stroke:currentColor}
+.mark .b{stroke:var(--blue-lit)}
+
+/* ---------- START SCREEN ---------- */
+.splash{position:fixed;inset:0;z-index:200;background:var(--ink);display:none;place-items:center;
+  transition:opacity .85s ease,visibility .85s}
+.js .splash{display:grid}
+.splash-inner{display:grid;justify-items:center;gap:clamp(18px,2.6vw,26px);
+  animation:splashRise 1.1s var(--ease) both}
+.splash .mark{font-size:clamp(50px,9vw,88px);color:var(--bone)}
+.splash .mark path{stroke-width:2.2}
+.splash-name{font-weight:800;font-size:clamp(.85rem,2vw,1.4rem);letter-spacing:.4em;
+  text-transform:uppercase;color:var(--bone);text-indent:.4em;text-align:center}
+.splash-sub{font-family:var(--mono);font-size:clamp(.58rem,.95vw,.7rem);letter-spacing:.48em;
+  text-transform:uppercase;color:#76767B;text-indent:.48em}
+.splash-bar{display:block;width:clamp(120px,16vw,190px);height:1px;background:var(--rule-d);overflow:hidden}
+.splash-bar i{display:block;width:100%;height:100%;background:var(--blue-lit);
+  transform:scaleX(0);transform-origin:left;animation:splashBar 1.7s var(--ease) forwards}
+.splash.out{opacity:0;visibility:hidden;pointer-events:none}
+html.lock,html.lock body{overflow:hidden}
+html.lock main,html.lock footer,html.lock .nav{visibility:hidden}
+@keyframes splashRise{from{opacity:0;transform:translateY(16px) scale(.985)}to{opacity:1;transform:none}}
+@keyframes splashBar{to{transform:scaleX(1)}}
+.no-js .splash{display:none}
+
+/* hero entrance after the start screen */
+.js .hero-name,.js .hero-mid,.js .hero-row.bottom > div{opacity:0;transform:translateY(30px);
+  transition:opacity 1.1s var(--ease),transform 1.1s var(--ease)}
+.js .hero.go .hero-name,.js .hero.go .hero-mid,.js .hero.go .hero-row.bottom > div{opacity:1;transform:none}
+.js .hero.go .hero-mid{transition-delay:.12s}
+.js .hero.go .hero-row.bottom > div{transition-delay:.2s}
+.js .hero.go .hero-name.b{transition-delay:.08s}
+
+/* ---------- CUSTOM CURSOR ---------- */
+.cursor{position:fixed;left:0;top:0;z-index:300;width:13px;height:13px;border-radius:50%;
+  background:#fff;mix-blend-mode:difference;pointer-events:none;opacity:0;will-change:transform;
+  transition:opacity .35s ease,width .4s var(--ease),height .4s var(--ease)}
+.cursor.on{opacity:1}
+.cursor.big{width:52px;height:52px}
+html.hide-cursor,html.hide-cursor *{cursor:none!important}
+
+/* ---------- NAV ---------- */
+.nav{position:sticky;top:0;z-index:60;height:var(--nav);background:var(--ink);color:var(--bone)}
+.nav .bar{height:var(--nav);display:flex;align-items:center;justify-content:space-between;
+  padding:0 clamp(18px,2.4vw,32px)}
+.brand{display:inline-flex;align-items:center;gap:11px;font-family:var(--mono);font-size:.74rem;
+  font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--bone)}
+.brand .mark{font-size:21px}
+.brand b{font-weight:500}
+.navset{display:flex;align-items:center;gap:clamp(26px,5vw,64px)}
+.links{display:flex;gap:clamp(22px,3.4vw,46px)}
+.links a{font-family:var(--mono);font-size:.72rem;font-weight:400;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--blue-soft);transition:color .3s}
+.links a:hover{color:var(--blue-pale)}
+.links a.on{color:#EEF4FD}
+.navmail{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--blue-soft);transition:color .3s}
+.navmail:hover{color:var(--blue-pale)}
+.menu-btn{display:none;width:42px;height:42px;place-items:center;margin-right:-10px}
+.burger{position:relative;display:block;width:26px;height:13px}
+.burger i{position:absolute;right:0;height:1.5px;background:var(--bone);border-radius:2px;
+  transition:transform .4s var(--ease),width .4s var(--ease),top .4s var(--ease)}
+.burger i:first-child{top:0;width:26px}
+.burger i:last-child{top:11px;width:17px}
+.menu-btn[aria-expanded="true"] .burger i:first-child{top:6px;transform:rotate(45deg)}
+.menu-btn[aria-expanded="true"] .burger i:last-child{top:6px;width:26px;transform:rotate(-45deg)}
+@media (max-width:880px){
+  .menu-btn{display:grid}
+  .navset{position:absolute;top:var(--nav);left:0;right:0;display:none;flex-direction:column;
+    align-items:stretch;gap:0;background:var(--ink);padding:6px var(--gutter) 22px;border-top:1px solid var(--rule-d)}
+  .navset.open{display:flex}
+  .links{flex-direction:column;gap:0}
+  .links a,.navmail{padding:15px 0;border-bottom:1px solid var(--rule-d);font-size:.84rem}
+  .navmail{border-bottom:0}
+}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;background:var(--ink);color:var(--bone);overflow:hidden;
+  min-height:calc(100svh - var(--nav));display:flex;flex-direction:column;justify-content:space-between;
+  padding:clamp(26px,3.6vw,44px) 0 clamp(22px,3vw,40px)}
+.hero-grid{position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);
+  background-size:30px 30px}
+.hero-vig{position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(120% 90% at 50% 42%,rgba(11,11,12,0) 0%,rgba(11,11,12,.55) 62%,rgba(11,11,12,.95) 100%)}
+.hero-glow{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .6s ease;
+  background:radial-gradient(circle 320px at var(--mx,-999px) var(--my,-999px),rgba(92,134,201,.17),transparent 68%)}
+.hero.live .hero-glow{opacity:1}
+.hero-cross{position:absolute;left:0;top:0;z-index:4;pointer-events:none;opacity:0;transition:opacity .3s;
+  font-family:var(--mono);font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:#C9C6BF;
+  white-space:nowrap;will-change:transform}
+.hero.live .hero-cross{opacity:1}
+.hero > .hero-row,.hero > .hero-mid{position:relative;z-index:3}
+
+.hero-row{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;
+  padding:0 clamp(18px,2.4vw,32px)}
+.hero-name{font-size:clamp(3.2rem,13vw,12rem)}
+.hero-name.b{align-self:flex-end;text-align:right;margin-right:clamp(-26px,-2.2vw,0px)}
+.hero-row.bottom{align-items:flex-end}
+.hero-tag{font-family:var(--mono);font-size:clamp(.68rem,1.1vw,.8rem);letter-spacing:.2em;
+  text-transform:uppercase;line-height:2;color:#C4C1BA;max-width:30ch}
+.hero-cv{margin-top:24px;padding:12px 25px;font-size:.84rem;gap:11px;color:var(--bone)}
+.hero-scroll{display:flex;flex-direction:column;align-items:flex-start;gap:14px;margin-top:26px;color:#8E8B85}
+.hero-scroll svg{animation:bob 2.6s var(--ease) infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+
+.hero-mid{display:flex;align-items:flex-start;gap:clamp(20px,4vw,52px);
+  padding:clamp(18px,3vw,34px) clamp(18px,2.4vw,32px)}
+.hero-year{font-family:var(--mono);font-size:clamp(.78rem,1.3vw,.95rem);letter-spacing:.2em;color:#C4C1BA}
+.hero-rail{display:flex;flex-direction:column;align-items:center;gap:16px}
+.hero-rail i{width:5px;height:5px;border-radius:50%;background:var(--blue-lit)}
+.hero-rail span{width:1px;height:clamp(52px,7vw,96px);background:#3A3A3F}
+.hero-rail b{font-family:var(--mono);font-size:.66rem;font-weight:400;letter-spacing:.3em;
+  text-transform:uppercase;color:#8E8B85;writing-mode:vertical-rl;transform:rotate(180deg)}
+@media (max-width:760px){
+  .hero-row{flex-direction:column;align-items:flex-start}
+  .hero-name.b{align-self:flex-start;text-align:left;margin-right:0}
+  .hero-row.bottom{align-items:flex-start;gap:30px}
+  .hero-mid{padding-top:26px}
+}
+
+/* ---------- BANDS ---------- */
+.band{padding:clamp(88px,12vw,168px) 0}
+.band.tight{padding:clamp(66px,8vw,104px) 0}
+.dark{background:var(--ink);color:var(--bone)}
+.dark.alt{background:var(--charcoal)}
+.dark .mono,.dark .hint{color:#8E8B85}
+.lead{display:block;margin-bottom:clamp(44px,6vw,86px)}
+.hint{color:var(--muted)}
+
+/* ---------- STATEMENT ---------- */
+.statement{font-family:var(--serif);font-size:clamp(1.5rem,3.9vw,3.4rem);line-height:1.22;
+  letter-spacing:-.02em;max-width:19ch;margin:0 auto;text-align:left}
+@media (min-width:760px){.statement{max-width:21ch}}
+.statement .w{color:#3C3C40;transition:color .5s var(--ease);display:inline-block}
+.statement .w.lit{color:var(--bone)}
+.statement em{font-style:italic;color:var(--blue-lit)}
+.no-js .statement .w,.reduce .statement .w{color:var(--bone)}
+
+/* ---------- ABOUT ---------- */
+.about{display:grid;grid-template-columns:minmax(230px,.82fr) 1.18fr;gap:clamp(36px,7vw,110px);align-items:start}
+.facts{border-top:1px solid var(--rule)}
+.fact{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;
+  padding:17px 0;border-bottom:1px solid var(--rule)}
+.fact dt{font-family:var(--mono);font-size:.66rem;font-weight:500;letter-spacing:.17em;
+  text-transform:uppercase;color:var(--muted)}
+.fact dd{font-size:.97rem;font-weight:500;text-align:right;letter-spacing:-.01em}
+.about-copy p{margin-bottom:1.35em;max-width:62ch;color:#3A3A3E}
+.about-copy p:last-of-type{margin-bottom:0}
+.about-copy strong{font-weight:600;color:var(--text);box-shadow:inset 0 -.42em 0 rgba(27,58,107,.11)}
+.about-foot{display:flex;flex-wrap:wrap;align-items:center;gap:clamp(22px,4vw,54px);
+  margin-top:clamp(34px,4.6vw,52px);padding-top:26px;border-top:1px solid var(--rule)}
+.clock{display:flex;align-items:baseline;gap:9px}
+.clock b{font-size:1.18rem;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.clock span{font-family:var(--mono);font-size:.66rem;letter-spacing:.16em;color:var(--muted)}
+@media (max-width:860px){.about{grid-template-columns:1fr;gap:44px}.fact dd{text-align:right}}
+
+/* ---------- EXPERIENCE ---------- */
+.feature{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+  padding:clamp(34px,5vw,60px) 0;margin-bottom:clamp(14px,2vw,26px)}
+.feature-top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px}
+.feature h3{font-size:clamp(1.9rem,4.6vw,3.6rem);font-weight:700;letter-spacing:-.045em;line-height:1.02;
+  margin:18px 0 10px;max-width:16ch}
+.feature .role{font-family:var(--mono);font-size:.7rem;letter-spacing:.17em;text-transform:uppercase;color:var(--muted)}
+.feature-body{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(28px,5vw,72px);margin-top:clamp(24px,3.4vw,40px)}
+.feature-body p{color:#3A3A3E;max-width:54ch}
+.panel-list{display:grid;gap:17px}
+.panel-list li{position:relative;padding-left:26px;color:#3A3A3E;font-size:.99rem;line-height:1.6}
+.panel-list li::before{content:"";position:absolute;left:0;top:.72em;width:12px;height:1px;background:var(--blue)}
+.panel-list strong{font-weight:600;color:var(--text)}
+@media (max-width:860px){.feature-body{grid-template-columns:1fr;gap:26px}}
+
+.index{border-top:1px solid var(--rule)}
+.row{border-bottom:1px solid var(--rule)}
+.row-btn{display:grid;grid-template-columns:auto 1fr auto auto;align-items:center;gap:clamp(16px,3vw,40px);
+  width:100%;padding:clamp(22px,3vw,34px) 0;transition:padding-left .45s var(--ease),color .3s}
+.row-btn:hover{padding-left:clamp(8px,1.4vw,18px)}
+.row-name{display:block;font-size:clamp(1.35rem,2.9vw,2.5rem);font-weight:600;letter-spacing:-.035em;line-height:1.1}
+.row-role{display:block;font-family:var(--mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted);margin-top:9px}
+.row-date{font-family:var(--mono);font-size:.68rem;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.plus{position:relative;width:16px;height:16px;flex:none}
+.plus::before,.plus::after{content:"";position:absolute;left:50%;top:50%;background:var(--muted);
+  transition:transform .45s var(--ease),background .3s}
+.plus::before{width:16px;height:1.5px;transform:translate(-50%,-50%)}
+.plus::after{width:1.5px;height:16px;transform:translate(-50%,-50%)}
+.row-btn:hover .plus::before,.row-btn:hover .plus::after{background:var(--blue)}
+.row-btn:hover .ord{color:var(--text)}
+.row-btn[aria-expanded="true"] .plus::before{transform:translate(-50%,-50%) rotate(180deg)}
+.row-btn[aria-expanded="true"] .plus::after{transform:translate(-50%,-50%) rotate(90deg)}
+.panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .55s var(--ease)}
+.panel.open{grid-template-rows:1fr}
+.panel > div{overflow:hidden}
+.panel ul{display:grid;gap:15px;padding:4px 0 clamp(30px,4vw,44px) 0;max-width:74ch;
+  margin-left:clamp(0px,7vw,104px)}
+.panel li{position:relative;padding-left:26px;color:#3A3A3E;font-size:1rem;line-height:1.6}
+.panel li::before{content:"";position:absolute;left:0;top:.72em;width:12px;height:1px;background:var(--blue)}
+.no-js .panel{grid-template-rows:1fr}
+@media (max-width:760px){
+  .row-btn{grid-template-columns:1fr auto;align-items:start;row-gap:9px;column-gap:18px}
+  .row-btn:hover{padding-left:0}
+  .row-btn > .ord{grid-area:1/1}
+  .row-btn > span:not(.ord):not(.row-date):not(.plus){grid-area:2/1}
+  .row-btn > .row-date{grid-area:3/1}
+  .row-btn > .plus{grid-area:1/2;align-self:center;margin-top:2px}
+  .row-role{margin-top:7px}
+  .panel ul{margin-left:0}
+}
+
+.sub{margin-top:clamp(44px,6vw,74px)}
+.sub-list{display:grid;gap:0;border-top:1px solid var(--rule)}
+.sub-item{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px;
+  padding:19px 0;border-bottom:1px solid var(--rule)}
+.sub-item b{font-weight:500;font-size:1.05rem;letter-spacing:-.015em}
+.sub-item span{font-family:var(--mono);font-size:.67rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* ---------- PRACTICE ---------- */
+.areas{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--rule-d)}
+.area{padding:clamp(26px,3.4vw,42px) clamp(0px,2.6vw,36px) clamp(26px,3.4vw,42px) 0;
+  border-bottom:1px solid var(--rule-d)}
+.area:nth-child(odd){border-right:1px solid var(--rule-d);padding-right:clamp(22px,3vw,44px)}
+.area:nth-child(even){padding-left:clamp(22px,3vw,44px)}
+.area h3{font-size:clamp(1.1rem,1.9vw,1.42rem);font-weight:600;letter-spacing:-.025em;margin:12px 0 10px;line-height:1.24}
+.area p{font-size:.93rem;line-height:1.62;color:#96938D}
+@media (max-width:760px){
+  .areas{grid-template-columns:1fr}
+  .area,.area:nth-child(odd),.area:nth-child(even){border-right:0;padding-left:0;padding-right:0}
+}
+
+/* ---------- METRICS ---------- */
+.metrics{border-top:1px solid var(--rule)}
+.metric{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,90px);
+  padding:clamp(40px,5.4vw,72px) 0;border-bottom:1px solid var(--rule);align-items:start}
+.metric-k{display:flex;align-items:flex-start;gap:18px}
+.metric-k .mono{color:var(--muted);max-width:13ch;line-height:1.75}
+.metric-n{font-size:clamp(3.4rem,8vw,6.5rem);font-weight:800;letter-spacing:-.05em;line-height:.9;
+  margin-top:16px;font-variant-numeric:tabular-nums}
+.metric-n sup{font-size:.34em;font-weight:600;letter-spacing:0;vertical-align:super;margin-left:.1em;color:var(--blue)}
+.break{display:grid;gap:12px;padding-top:4px}
+.break li{display:grid;grid-template-columns:5.6ch 1fr;gap:18px;align-items:baseline;
+  padding-bottom:12px;border-bottom:1px solid var(--rule)}
+.break li:last-child{border-bottom:0}
+.break b{font-family:var(--mono);font-size:.92rem;font-weight:500;color:var(--blue);
+  font-variant-numeric:tabular-nums;text-align:right}
+.break span{font-size:1.02rem;letter-spacing:-.015em;color:#3A3A3E}
+@media (max-width:760px){.metric{grid-template-columns:1fr;gap:26px}}
+
+/* ---------- CREDENTIALS ---------- */
+.creds{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(34px,5vw,64px)}
+.card{background:var(--white);border:1px solid var(--rule);border-radius:3px;
+  padding:clamp(26px,3.4vw,42px)}
+.card h3{font-family:var(--mono);font-size:.68rem;font-weight:500;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--muted);padding-bottom:16px;border-bottom:1px solid var(--rule)}
+.cred{padding:18px 0;border-bottom:1px solid var(--rule)}
+.cred:last-child{border-bottom:0;padding-bottom:0}
+.cred b{display:block;font-weight:600;font-size:1.04rem;letter-spacing:-.02em;line-height:1.34}
+.cred i{display:block;font-style:normal;font-size:.95rem;color:#55555A;margin-top:4px}
+.cred em{display:block;font-family:var(--mono);font-style:normal;font-size:.66rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--muted);margin-top:8px}
+@media (max-width:860px){.creds{grid-template-columns:1fr}}
+
+/* ---------- SKILLS ---------- */
+.skills{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
+  border-top:1px solid var(--rule-d)}
+.skill{display:flex;align-items:baseline;gap:14px;padding:17px 0;border-bottom:1px solid var(--rule-d)}
+.skill span{font-size:1.02rem;letter-spacing:-.015em}
+.interests{display:flex;flex-wrap:wrap;gap:12px;margin-top:clamp(36px,5vw,58px)}
+.chip{display:inline-flex;align-items:center;gap:11px;padding:11px 20px;border:1px solid var(--rule-d);
+  border-radius:999px;font-size:.9rem;color:#C4C1BA}
+.chip::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--blue-lit);flex:none}
+
+/* ---------- CONTACT ---------- */
+.contact{position:relative;overflow:hidden;background:var(--charcoal);color:var(--bone);
+  padding:clamp(76px,10vw,140px) 0}
+.contact::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+  background:repeating-linear-gradient(-28deg,rgba(92,134,201,.11) 0 1px,transparent 1px 13px)}
+.contact .wrap{position:relative}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,6vw,80px);align-items:end}
+.contact h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.4rem,6.4vw,5rem);
+  letter-spacing:-.025em;line-height:1.02}
+.contact h2 em{font-style:italic;color:var(--blue-lit)}
+.contact-mail{display:inline-block;font-size:clamp(1rem,2.1vw,1.5rem);font-weight:500;letter-spacing:-.025em;
+  margin-top:26px;padding-bottom:7px;border-bottom:1px solid #45454A;transition:border-color .35s}
+.contact-mail:hover{border-color:var(--bone)}
+.contact-note{color:#9A9A9F;max-width:34ch;margin-bottom:18px}
+.li{display:inline-flex;align-items:center;gap:12px;margin-top:20px;padding-top:18px;
+  border-top:1px solid var(--rule-d);width:100%;color:var(--blue-soft);transition:color .3s}
+.li svg{width:17px;height:17px;flex:none}
+.li span{font-size:.92rem;letter-spacing:-.01em;word-break:break-all}
+.li:hover{color:var(--blue-pale)}
+@media (max-width:760px){.contact-grid{grid-template-columns:1fr;align-items:start;gap:34px}}
+
+/* ---------- FOOTER ---------- */
+.foot{background:var(--ink);color:var(--bone);padding-top:clamp(40px,5vw,66px)}
+.wordmark{padding:0 clamp(9px,1.5vw,22px);line-height:.8}
+.wordmark span{display:block;font-weight:800;letter-spacing:-.05em;text-transform:uppercase;
+  font-size:clamp(2.6rem,15.4vw,15rem);white-space:nowrap}
+.foot-cols{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(24px,4vw,48px);
+  padding:clamp(44px,6vw,80px) 0 clamp(30px,4vw,48px)}
+.foot-col h4{font-family:var(--mono);font-size:.64rem;font-weight:400;letter-spacing:.2em;
+  text-transform:uppercase;color:#76767B;margin-bottom:15px}
+.foot-col p,.foot-col a{font-size:.99rem;letter-spacing:-.015em;color:#C9C6BF;line-height:1.72}
+.foot-col a{display:inline-block;border-bottom:1px solid transparent;transition:border-color .3s,color .3s}
+.foot-col a:hover{color:var(--bone);border-color:#45454A}
+.foot-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;
+  padding:22px 0 30px;border-top:1px solid var(--rule-d)}
+.foot-bar p{font-family:var(--mono);font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;color:#76767B}
+.top{display:inline-flex;align-items:center;gap:11px;font-family:var(--mono);font-size:.64rem;
+  letter-spacing:.17em;text-transform:uppercase;color:#76767B;transition:color .3s}
+.top:hover{color:var(--bone)}
+@media (max-width:860px){.foot-cols{grid-template-columns:repeat(2,1fr);gap:32px}}
+@media (max-width:480px){.foot-cols{grid-template-columns:1fr}}
+
+/* ---------- REVEAL ---------- */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.d1{transition-delay:.08s}
+.js .rv.d2{transition-delay:.16s}
+.js .rv.d3{transition-delay:.24s}
+
+@media (prefers-reduced-motion:reduce){
+  html:focus-within{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;
+    transition-duration:.001ms!important}
+  .js .rv{opacity:1;transform:none}
+  .statement .w{color:var(--bone)}
+  .hero-glow,.hero-cross,.cursor{display:none}
+  .js .splash{display:none}
+  .js .hero-name,.js .hero-mid,.js .hero-row.bottom > div{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ START SCREEN ============ -->
+<div class="splash" id="splash" aria-hidden="true">
+  <div class="splash-inner">
+    <svg class="mark" viewBox="0 0 32 32"><path class="a" d="M4 27V5l12 13"/><path class="b" d="M16 18 28 5v22"/></svg>
+    <p class="splash-name">Pratyaksha Mehrotra</p>
+    <p class="splash-sub">Legal Portfolio</p>
+    <span class="splash-bar" aria-hidden="true"><i></i></span>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="bar">
+    <a class="brand" href="#top" aria-label="Pratyaksha Mehrotra — back to top">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><path class="a" d="M4 27V5l12 13"/><path class="b" d="M16 18 28 5v22"/></svg>
+      <b>Pratyaksha Mehrotra</b>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navset" aria-label="Menu">
+      <span class="burger"><i></i><i></i></span>
+    </button>
+    <nav class="navset" id="navset" aria-label="Primary">
+      <div class="links">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#practice">Practice</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a class="navmail" href="mailto:pmehrotra2003@gmail.com">Mail</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-vig" aria-hidden="true"></div>
+  <div class="hero-cross" id="cross" aria-hidden="true">Noida, IN &nbsp;/&nbsp; 28.57&deg;N 77.32&deg;E</div>
+
+  <div class="hero-row">
+    <h1 class="display hero-name">Pratyaksha</h1>
+  </div>
+
+  <div class="hero-mid">
+    <span class="hero-year">2K26</span>
+    <span class="hero-rail" aria-hidden="true"><i></i><span></span><b>./ Portfolio</b></span>
+  </div>
+
+  <div class="hero-row bottom">
+    <div>
+      <p class="hero-tag">Corporate advisory, white-collar<br>litigation and arbitration</p>
+      <a class="pill hero-cv" href="Pratyaksha_Mehrotra_CV.pdf" download>Download CV
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M8 1.5v9m-3.6-3.6L8 10.5l3.6-3.6M2 14.2h12" stroke="currentColor" stroke-width="1.3"/>
+        </svg>
+      </a>
+      <a class="hero-scroll" href="#statement" aria-label="Scroll to introduction">
+        <svg width="13" height="28" viewBox="0 0 13 28" fill="none" aria-hidden="true">
+          <path d="M6.5 0v26M1 20.5l5.5 6 5.5-6" stroke="currentColor" stroke-width="1.1"/>
+        </svg>
+      </a>
+    </div>
+    <span class="display hero-name b" aria-hidden="true">Mehrotra</span>
+  </div>
+</section>
+
+<!-- ============ STATEMENT ============ -->
+<section class="band dark" id="statement">
+  <div class="wrap">
+    <p class="statement" id="stmt">My legal education has not been confined to a classroom. Across six internships &mdash; a Tier 1 corporate firm, the chamber of a Special Public Prosecutor for CBI and ED, and litigation at the Allahabad High Court and Delhi courts &mdash; I have drafted, researched, and seen it argued.</p>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="band" id="about">
+  <div class="wrap">
+    <p class="sect-title lead rv">The Profile</p>
+    <div class="about">
+
+      <dl class="facts rv">
+        <div class="fact"><dt>Degree</dt><dd>B.B.A. LL.B. (Hons.)</dd></div>
+        <div class="fact"><dt>University</dt><dd>Amity University,<br>Uttar Pradesh</dd></div>
+        <div class="fact"><dt>Batch</dt><dd>2022 &mdash; 2027</dd></div>
+        <div class="fact"><dt>SGPA</dt><dd>8.35 / 10</dd></div>
+        <div class="fact"><dt>Based in</dt><dd>Noida, India</dd></div>
+      </dl>
+
+      <div class="about-copy rv d1">
+        <p>I am in the fourth year of the <strong>B.B.A. LL.B. (Hons.)</strong> programme at Amity University, Uttar Pradesh. My work so far has sat deliberately on both sides of the profession &mdash; the advisory desk and the courtroom &mdash; because I do not think either is fully legible without the other.</p>
+        <p>At <strong>Dua Associates</strong> I researched the Insolvency and Bankruptcy Code, directors&rsquo; duties and the Draft Telecommunications Rules, 2026. At <strong>Fox Mandal</strong> I drafted non-disclosure agreements, an appointment letter and a FEMA compliance checklist, and wrote an article on the responsibilities of the Board for the firm&rsquo;s knowledge management initiative. In the chambers of a <strong>Special Public Prosecutor for the CBI</strong>, I worked on Prevention of Corruption Act matters and then watched them argued at the Delhi High Court.</p>
+        <p>What I take from that range is a habit rather than a specialism: read the provision first, find out what the courts have actually done with it, and write it down so that someone else can use it.</p>
+
+        <div class="about-foot">
+          <div class="clock"><b id="clockA">&mdash;&mdash;:&mdash;&mdash;</b><span>IST &middot; Noida</span></div>
+          <a class="arrow acc" href="Pratyaksha_Mehrotra_CV.pdf" download>Download CV <i></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="band" id="work" style="padding-top:0">
+  <div class="wrap">
+    <p class="sect-title lead rv">Selected Experience</p>
+
+    <!-- FEATURED -->
+    <article class="feature rv">
+      <div class="feature-top">
+        <span class="ord">01 &mdash; Featured</span>
+        <span class="role">Jun 2026 &mdash; Jul 2026</span>
+      </div>
+      <h3>Dua Associates</h3>
+      <p class="role">Corporate Advisory &amp; Dispute Resolution</p>
+
+      <div class="feature-body">
+        <p>A Tier 1 corporate firm, and the most recent and most demanding of my placements. The brief ran across insolvency, company law, arbitration and the regulation of technology and telecommunications &mdash; frequently within the same week.</p>
+        <ul class="panel-list">
+          <li><strong>Corporate, insolvency and commercial research.</strong> The Insolvency and Bankruptcy Code, 2016, including the legislative intent and retrospective applicability of Section 96(4); winding-up under the Companies Act, 1956 and 2013; directors&rsquo; duties and liabilities; termination of Managing Directors; complaints under Section 166; and the liability of independent directors.</li>
+          <li><strong>Commercial disputes and arbitration.</strong> The unilateral formation of sub-committees, reliance on internal reports to deny contractual payments, the judicial interpretation of finance costs, and review of arbitration correspondence.</li>
+          <li><strong>Technology and telecom regulation.</strong> Cyber-crime offences under the Bharatiya Nyaya Sanhita, 2023, the Information Technology Act, 2000 and the Digital Personal Data Protection Act, 2023; unlawful interception and call tapping; and the Draft Telecommunications (Spectrum Assignment by Administrative Process) Rules, 2026.</li>
+          <li><strong>Case preparation.</strong> Supreme Court and NCLAT judgments, the retrospective applicability of clarificatory amendments, correctness of contents in affidavits under the Commercial Courts Act, and electricity regulatory disputes on PPAs and Wheeling &amp; Banking Agreements.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- INDEX -->
+    <div class="index rv d1">
+
+      <div class="row">
+        <button class="row-btn" aria-expanded="false" aria-controls="p2">
+          <span class="ord">02</span>
+          <span><span class="row-name">Areness Law</span><span class="row-role">Litigation</span></span>
+          <span class="row-date">May 2026 &mdash; Jun 2026</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="panel" id="p2"><div><ul>
+          <li>Researched insurance law, including fire insurance claims where the insured godown location was changed without intimation to the insurer, and the role, authority and liability of insurance agents and sub-agents.</li>
+          <li>Examined civil procedure and banking questions under Order IX Rule 9 read with Section 151 of the Code of Civil Procedure, 1908, and whether one holder of an &ldquo;either or survivor&rdquo; joint fixed deposit may unilaterally discharge or alter it.</li>
+          <li>Researched the freezing of bank accounts in cybercrime investigations &mdash; the scope of police powers under Section 106(3) BNSS and Section 102 CrPC, the legality of blanket freezing orders, unilateral debits from frozen accounts, and violations of Articles 14, 19(1)(g), 21 and 300A.</li>
+          <li>Analysed the MSMED Act, 2006 from the buyer&rsquo;s perspective under Sections 15 and 16, covering adjustment and reconciliation clauses, set-off of liabilities, and whether liability crystallises on admitted invoices or only after adjudication.</li>
+          <li>Drafted written arguments in a labour law dispute, prepared case briefs, researched anticipatory bail, and ran searches on opposite parties&rsquo; assets and pending litigation.</li>
+          <li>Researched DDCA membership rules and fraud judgments, lateral appointments and deputations to senior posts including PIL maintainability, and condonation of delay before the NCDRC under the 30 + 15 day written statement framework.</li>
+        </ul></div></div>
+      </div>
+
+      <div class="row">
+        <button class="row-btn" aria-expanded="false" aria-controls="p3">
+          <span class="ord">03</span>
+          <span><span class="row-name">Fox Mandal &amp; Associates LLP</span><span class="row-role">Corporate</span></span>
+          <span class="row-date">Jun 2025 &mdash; Jul 2025</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="panel" id="p3"><div><ul>
+          <li>Researched FDI policy and sectoral caps under the Foreign Exchange Management (Non-Debt Instruments) Rules, 2019, and FPI eligibility to subscribe to non-convertible debentures under the SEBI (FPI) Regulations, 2019.</li>
+          <li>Examined the fiduciary duties of the Board under the Companies Act, 2013 and the SEBI (LODR) Regulations, 2015, and IP licensing restrictions on foreign licensors under FEMA, 1999.</li>
+          <li>Prepared a FEMA compliance checklist for FDI transactions covering Form FC-GPR, FC-TRS, ECB and FLA reporting, and examined the penalty framework under the Limited Liability Partnership Act, 2008 for non-filing of Forms 8 and 11.</li>
+          <li>Drafted two non-disclosure agreements, a standard appointment letter, and a due diligence list of documents spanning shareholders&rsquo; agreements, share purchase agreements, memoranda of association, founders&rsquo; agreements and powers of attorney.</li>
+          <li>Reviewed an employment appointment letter, identifying gaps across probation, termination, confidentiality and post-employment clauses, and a Maharashtra Pollution Control Board consent to operate under the Water and Air Acts.</li>
+          <li>Authored a firm-assigned article on the roles and responsibilities of the Board of Directors under the Companies Act, 2013, in Bluebook citation format, for the firm&rsquo;s knowledge management initiative.</li>
+        </ul></div></div>
+      </div>
+
+      <div class="row">
+        <button class="row-btn" aria-expanded="false" aria-controls="p4">
+          <span class="ord">04</span>
+          <span><span class="row-name">Chambers of Anupam S Sharrma</span><span class="row-role">Litigation &middot; SPP for CBI, Special Counsel for ED</span></span>
+          <span class="row-date">May 2025 &mdash; Jun 2025</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="panel" id="p4"><div><ul>
+          <li>Assisted on Central Bureau of Investigation and Enforcement Directorate matters, focused on white-collar crime and corruption litigation.</li>
+          <li>Researched Sections 7 and 13 of the Prevention of Corruption Act, 1988, covering investigation procedure, evidentiary requirements and judicial precedent.</li>
+          <li>Analysed Section 5(2) of the Indian Telegraph Act, 1885 on the legality of telephonic interception and its use in criminal investigations, and prepared notes on the CrPC provisions governing investigation, arrest and bail.</li>
+          <li>Assisted in drafting affidavits, legal submissions and responses in ongoing litigation before the Delhi High Court, and prepared case notes tracking procedural developments and judicial pronouncements.</li>
+          <li>Attended proceedings at the Delhi High Court regularly, observing argument in criminal and constitutional matters involving economic offences and government investigations.</li>
+        </ul></div></div>
+      </div>
+
+      <div class="row">
+        <button class="row-btn" aria-expanded="false" aria-controls="p5">
+          <span class="ord">05</span>
+          <span><span class="row-name">Chambers of Ashish Kumar Singh</span><span class="row-role">Litigation &middot; High Court of Judicature at Allahabad</span></span>
+          <span class="row-date">Jun 2024 &mdash; Jul 2024</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="panel" id="p5"><div><ul>
+          <li>Researched constitutional and civil law questions on live matters, analysing precedent, statutes and doctrine to support case strategy.</li>
+          <li>Assisted in case preparation by evaluating legal arguments and drafting research notes on complex issues.</li>
+          <li>Attended and observed proceedings at the High Court of Judicature at Allahabad.</li>
+          <li>Assisted in drafting legal submissions and preparing case briefs for hearings.</li>
+        </ul></div></div>
+      </div>
+
+      <div class="row">
+        <button class="row-btn" aria-expanded="false" aria-controls="p6">
+          <span class="ord">06</span>
+          <span><span class="row-name">Mind Legal Advocates</span><span class="row-role">Litigation &middot; Delhi</span></span>
+          <span class="row-date">May 2024 &mdash; Jun 2024</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="panel" id="p6"><div><ul>
+          <li>Researched arbitration matters, corporate law and litigation issues under the Companies Act, 2013, SEBI Regulations, the CPC and the NCLT Rules.</li>
+          <li>Prepared case briefs for matters listed before the courts of Delhi and assisted in case analysis for ongoing litigation.</li>
+          <li>Assisted in contract drafting, due diligence, compliance and corporate governance work, and reviewed agreements for regulatory compliance.</li>
+          <li>Observed court proceedings, gaining insight into litigation strategy and procedure.</li>
+        </ul></div></div>
+      </div>
+
+      <div class="row">
+        <button class="row-btn" aria-expanded="false" aria-controls="p7">
+          <span class="ord">07</span>
+          <span><span class="row-name">Vardharma Chambers</span><span class="row-role">Litigation &middot; Delhi</span></span>
+          <span class="row-date">Mar 2023 &mdash; Apr 2023</span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="panel" id="p7"><div><ul>
+          <li>Researched matters under Sections 241 and 242 of the Companies Act, 2013 and Section 43 of the Guardian and Ward Act, 1890.</li>
+          <li>Presented on Sections 11 and 17 of the Arbitration and Conciliation Act, 1996, and compiled a compendium of case law indexed to specific sections.</li>
+          <li>Assisted in drafting legal memos and notices, written submissions, legal opinions, eviction notices and condonation of delay applications, and prepared case notes.</li>
+          <li>Observed client meetings and was tasked with preparing questions in advance from the documents received before each interaction.</li>
+          <li>Attended sessions at the Saket District Court, Patiala House Court and Karkardooma Court, and observed matters listed before the Supreme Court by video conference.</li>
+        </ul></div></div>
+      </div>
+
+    </div>
+
+    <div class="sub rv">
+      <p class="mono hint" style="margin-bottom:18px">Earlier &mdash; social sector</p>
+      <div class="sub-list">
+        <div class="sub-item"><b>No Shame Campaign, Delhi</b><span>Intern &middot; Mar 2023 &mdash; Mar 2024</span></div>
+        <div class="sub-item"><b>Sarang Welfare Society, India</b><span>Intern &middot; Dec 2021 &mdash; Jul 2022</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ PRACTICE ============ -->
+<section class="band dark alt" id="practice">
+  <div class="wrap">
+    <p class="sect-title lead rv">Areas of Practice</p>
+    <div class="areas rv d1">
+
+      <article class="area"><span class="ord">01</span>
+        <h3>Corporate advisory &amp; governance</h3>
+        <p>Directors&rsquo; duties and liabilities under the Companies Act, 2013 and the SEBI (LODR) Regulations, 2015; termination of Managing Directors; Sections 166, 241 and 242; and the drafting of NDAs, appointment letters and due diligence lists.</p></article>
+
+      <article class="area"><span class="ord">02</span>
+        <h3>Insolvency &amp; restructuring</h3>
+        <p>The Insolvency and Bankruptcy Code, 2016, including Section 96(4) and its retrospective applicability; winding-up under the Companies Act, 1956 and 2013; and NCLT and NCLAT practice.</p></article>
+
+      <article class="area"><span class="ord">03</span>
+        <h3>Arbitration &amp; commercial disputes</h3>
+        <p>Sections 11 and 17 of the Arbitration and Conciliation Act, 1996; the unilateral formation of sub-committees; finance costs in commercial disputes; and affidavits under the Commercial Courts Act.</p></article>
+
+      <article class="area"><span class="ord">04</span>
+        <h3>White-collar crime &amp; economic offences</h3>
+        <p>Sections 7 and 13 of the Prevention of Corruption Act, 1988; CBI and ED matters; Section 5(2) of the Indian Telegraph Act, 1885; and the CrPC on investigation, arrest and bail.</p></article>
+
+      <article class="area"><span class="ord">05</span>
+        <h3>Technology, data &amp; telecom</h3>
+        <p>Cyber-crime under the Bharatiya Nyaya Sanhita, 2023; the Information Technology Act, 2000; the Digital Personal Data Protection Act, 2023; and the Draft Telecommunications (Spectrum Assignment) Rules, 2026.</p></article>
+
+      <article class="area"><span class="ord">06</span>
+        <h3>Exchange control &amp; inbound investment</h3>
+        <p>FDI policy and sectoral caps under the FEM (Non-Debt Instruments) Rules, 2019; FPI subscription to non-convertible debentures under the SEBI (FPI) Regulations, 2019; and FC-GPR, FC-TRS, ECB and FLA reporting.</p></article>
+
+      <article class="area"><span class="ord">07</span>
+        <h3>Civil, banking &amp; consumer</h3>
+        <p>Order IX Rule 9 with Section 151 of the CPC, 1908; &ldquo;either or survivor&rdquo; joint fixed deposits; the MSMED Act, 2006; and condonation of delay before the NCDRC.</p></article>
+
+      <article class="area"><span class="ord">08</span>
+        <h3>Constitutional &amp; public law</h3>
+        <p>Articles 14, 19(1)(g), 21 and 300A in the context of frozen bank accounts; the maintainability of public interest litigation; and lateral appointments to senior public office.</p></article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ METRICS ============ -->
+<section class="band" id="metrics">
+  <div class="wrap">
+    <p class="sect-title lead rv">By the Numbers</p>
+    <div class="metrics rv d1">
+
+      <div class="metric">
+        <div class="metric-k">
+          <span class="ord">01</span>
+          <div><span class="mono">Internships<br>completed</span>
+            <div class="metric-n" data-count="9" data-pad="2">0</div></div>
+        </div>
+        <ul class="break">
+          <li><b>02</b><span>Corporate firms</span></li>
+          <li><b>05</b><span>Litigation chambers</span></li>
+          <li><b>02</b><span>Social sector</span></li>
+        </ul>
+      </div>
+
+      <div class="metric">
+        <div class="metric-k">
+          <span class="ord">02</span>
+          <div><span class="mono">Statutes &amp;<br>codes worked with</span>
+            <div class="metric-n" data-count="24">0</div></div>
+        </div>
+        <ul class="break">
+          <li><b>07</b><span>Corporate &amp; securities</span></li>
+          <li><b>06</b><span>Criminal &amp; procedural</span></li>
+          <li><b>05</b><span>Technology &amp; exchange control</span></li>
+          <li><b>06</b><span>Civil &amp; commercial</span></li>
+        </ul>
+      </div>
+
+      <div class="metric">
+        <div class="metric-k">
+          <span class="ord">03</span>
+          <div><span class="mono">Courts &amp; forums<br>attended</span>
+            <div class="metric-n" data-count="6" data-pad="2">0</div></div>
+        </div>
+        <ul class="break">
+          <li><b>01</b><span>Supreme Court of India, by video conference</span></li>
+          <li><b>02</b><span>High Courts &mdash; Delhi, Allahabad</span></li>
+          <li><b>03</b><span>District courts &mdash; Saket, Patiala House, Karkardooma</span></li>
+        </ul>
+      </div>
+
+      <div class="metric">
+        <div class="metric-k">
+          <span class="ord">04</span>
+          <div><span class="mono">Academic<br>standing</span>
+            <div class="metric-n" data-count="8.35" data-dec="2"><span class="num">0</span><sup>/10</sup></div></div>
+        </div>
+        <ul class="break">
+          <li><b>88.5</b><span>Class XII, CBSE</span></li>
+          <li><b>81.4</b><span>Class X, CBSE</span></li>
+          <li><b>2022</b><span>Best Scholar, Delhi Public School, Prayagraj</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CREDENTIALS ============ -->
+<section class="band" id="credentials" style="padding-top:0">
+  <div class="wrap">
+    <p class="sect-title lead rv">Credentials</p>
+    <div class="creds">
+
+      <div class="card rv">
+        <h3>Education &amp; courses</h3>
+        <div class="cred">
+          <b>Amity University, Uttar Pradesh</b>
+          <i>B.B.A. LL.B. (Hons.) &mdash; SGPA 8.35 / 10</i>
+          <em>September 2022 &mdash; July 2027</em>
+        </div>
+        <div class="cred">
+          <b>Delhi Public School, Prayagraj (CBSE)</b>
+          <i>Class XII &mdash; 88.5% &nbsp;&middot;&nbsp; Class X &mdash; 81.4%</i>
+          <em>2020 &mdash; 2022</em>
+        </div>
+        <div class="cred">
+          <b>Arbitration &mdash; Lawlevelup</b>
+          <i>Taught by partners of leading law firms and industry experts</i>
+          <em>2024</em>
+        </div>
+        <div class="cred">
+          <b>Business Law for Managers &mdash; NPTEL, Swayam</b>
+          <i>Online certification</i>
+          <em>2022</em>
+        </div>
+      </div>
+
+      <div class="card rv d1">
+        <h3>Honours &amp; positions of responsibility</h3>
+        <div class="cred">
+          <b>Award for Best Scholar</b>
+          <i>Delhi Public School, Prayagraj</i>
+          <em>2022</em>
+        </div>
+        <div class="cred">
+          <b>Founder-Member, Sarang Welfare Society</b>
+          <i>Prayagraj branch</i>
+          <em>Present</em>
+        </div>
+        <div class="cred">
+          <b>Member, Amity Legal Aid &amp; Literacy Committee</b>
+          <i>Amity University, Uttar Pradesh</i>
+          <em>October 2022 &mdash; Present</em>
+        </div>
+        <div class="cred">
+          <b>Media Head, Amity Law Foundation</b>
+          <i>Amity University, Uttar Pradesh</i>
+          <em>Present</em>
+        </div>
+        <div class="cred">
+          <b>Volunteer &mdash; moots &amp; advocacy</b>
+          <i>Second Amity National Trial Advocacy Tournament, 2022 &nbsp;&middot;&nbsp; Amity International Moot Court, 2023</i>
+          <em>2022 &mdash; 2023</em>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="band dark tight" id="skills">
+  <div class="wrap">
+    <p class="sect-title lead rv">Skills &amp; Interests</p>
+    <div class="skills rv d1">
+      <div class="skill"><span class="ord">01</span><span>Research</span></div>
+      <div class="skill"><span class="ord">02</span><span>Analytical skills</span></div>
+      <div class="skill"><span class="ord">03</span><span>Detail oriented</span></div>
+      <div class="skill"><span class="ord">04</span><span>Organization</span></div>
+      <div class="skill"><span class="ord">05</span><span>Presentation skills</span></div>
+      <div class="skill"><span class="ord">06</span><span>Interpersonal skills</span></div>
+      <div class="skill"><span class="ord">07</span><span>Problem-solving</span></div>
+      <div class="skill"><span class="ord">08</span><span>Time management</span></div>
+      <div class="skill"><span class="ord">09</span><span>Collaboration and teamwork</span></div>
+      <div class="skill"><span class="ord">10</span><span>Strong work ethic</span></div>
+    </div>
+    <div class="interests rv d2">
+      <span class="chip">Legal research and drafting</span>
+      <span class="chip">Negotiation and arbitration</span>
+      <span class="chip">Public relations and outreach</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="rv">
+        <h2>Have a <em>brief</em>?</h2>
+        <a class="contact-mail" href="mailto:pmehrotra2003@gmail.com">pmehrotra2003@gmail.com</a>
+      </div>
+      <div class="rv d1">
+        <p class="contact-note">Open to internship and pre-placement conversations in corporate advisory, arbitration and commercial litigation.</p>
+        <a class="pill" href="mailto:pmehrotra2003@gmail.com">Write to me
+          <svg width="15" height="11" viewBox="0 0 15 11" fill="none" aria-hidden="true">
+            <path d="M0 5.5h13M9 1l4.5 4.5L9 10" stroke="currentColor" stroke-width="1.2"/>
+          </svg>
+        </a>
+        <a class="li" href="https://www.linkedin.com/in/pratyaksha-mehrotra-20b2b0256/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          <span>linkedin.com/in/pratyaksha-mehrotra</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="wordmark" aria-hidden="true">
+    <span>Pratyaksha</span>
+    <span>Mehrotra</span>
+  </div>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="mailto:pmehrotra2003@gmail.com">pmehrotra2003@gmail.com</a>
+      </div>
+      <div class="foot-col">
+        <h4>Current time</h4>
+        <p><span id="clockB">&mdash;&mdash;:&mdash;&mdash;</span> &nbsp;IST</p>
+      </div>
+      <div class="foot-col">
+        <h4>Based in</h4>
+        <p>Noida<br>Uttar Pradesh<br>India</p>
+      </div>
+      <div class="foot-col">
+        <h4>Document</h4>
+        <a href="Pratyaksha_Mehrotra_CV.pdf" download>Download CV &nbsp;(PDF)</a><br>
+        <a href="https://www.linkedin.com/in/pratyaksha-mehrotra-20b2b0256/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="foot-bar">
+      <p>&copy; <span id="yr">2026</span> Pratyaksha Mehrotra</p>
+      <a class="top" href="#top">Back to top
+        <svg width="11" height="12" viewBox="0 0 11 12" fill="none" aria-hidden="true">
+          <path d="M5.5 12V1M1 5.5L5.5 1 10 5.5" stroke="currentColor" stroke-width="1.1"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(reduce) document.documentElement.classList.add("reduce");
+
+  /* ---------- year ---------- */
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  /* ---------- IST clock ---------- */
+  var clocks = [document.getElementById("clockA"), document.getElementById("clockB")];
+  function tick(){
+    var t;
+    try{
+      t = new Date().toLocaleTimeString("en-GB",{timeZone:"Asia/Kolkata",hour:"2-digit",minute:"2-digit"});
+    }catch(e){
+      t = new Date().toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"});
+    }
+    clocks.forEach(function(c){ if(c) c.textContent = t; });
+  }
+  tick();
+  setInterval(tick, 20000);
+
+  /* ---------- mobile menu ---------- */
+  var btn = document.getElementById("menuBtn"), set = document.getElementById("navset");
+  btn.addEventListener("click", function(){
+    var open = set.classList.toggle("open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  set.addEventListener("click", function(e){
+    if(e.target.tagName === "A"){
+      set.classList.remove("open");
+      btn.setAttribute("aria-expanded","false");
+    }
+  });
+
+  /* ---------- hero glow + crosshair ---------- */
+  var hero = document.getElementById("hero"), cross = document.getElementById("cross");
+  if(!reduce && window.matchMedia("(hover: hover)").matches){
+    hero.addEventListener("pointermove", function(e){
+      var r = hero.getBoundingClientRect();
+      var x = e.clientX - r.left, y = e.clientY - r.top;
+      hero.style.setProperty("--mx", x + "px");
+      hero.style.setProperty("--my", y + "px");
+      cross.style.transform = "translate(" + (x + 22) + "px," + (y + 16) + "px)";
+      hero.classList.add("live");
+    });
+    hero.addEventListener("pointerleave", function(){ hero.classList.remove("live"); });
+  }
+
+  /* ---------- statement word reveal ---------- */
+  var stmt = document.getElementById("stmt");
+  if(stmt){
+    var words = stmt.textContent.trim().split(/\s+/);
+    stmt.textContent = "";
+    words.forEach(function(w, i){
+      var s = document.createElement("span");
+      s.className = "w";
+      s.textContent = w;
+      stmt.appendChild(s);
+      if(i < words.length - 1) stmt.appendChild(document.createTextNode(" "));
+    });
+    var spans = stmt.querySelectorAll(".w"), ticking = false;
+    function light(){
+      ticking = false;
+      var r = stmt.getBoundingClientRect(), vh = window.innerHeight;
+      var p = (vh * 0.86 - r.top) / (r.height + vh * 0.28);
+      p = Math.max(0, Math.min(1, p));
+      var n = Math.round(p * spans.length);
+      for(var i = 0; i < spans.length; i++) spans[i].classList.toggle("lit", i < n);
+    }
+    if(!reduce){
+      window.addEventListener("scroll", function(){
+        if(!ticking){ ticking = true; requestAnimationFrame(light); }
+      }, {passive:true});
+      window.addEventListener("resize", light, {passive:true});
+      light();
+    }
+  }
+
+  /* ---------- accordion ---------- */
+  document.querySelectorAll(".row-btn").forEach(function(b){
+    b.addEventListener("click", function(){
+      var panel = document.getElementById(b.getAttribute("aria-controls"));
+      var open = b.getAttribute("aria-expanded") === "true";
+      b.setAttribute("aria-expanded", open ? "false" : "true");
+      panel.classList.toggle("open", !open);
+    });
+  });
+
+  /* ---------- counters ---------- */
+  function run(node){
+    var target = parseFloat(node.getAttribute("data-count"));
+    var dec = parseInt(node.getAttribute("data-dec") || "0", 10);
+    var pad = parseInt(node.getAttribute("data-pad") || "0", 10);
+    var out = node.querySelector(".num") || node;
+    function fmt(v){
+      var s = v.toFixed(dec);
+      if(pad){
+        var parts = s.split(".");
+        while(parts[0].length < pad) parts[0] = "0" + parts[0];
+        s = parts.join(".");
+      }
+      return s;
+    }
+    if(reduce){ out.textContent = fmt(target); return; }
+    var start = null, dur = 1500;
+    function step(ts){
+      if(start === null) start = ts;
+      var p = Math.min(1, (ts - start) / dur);
+      var e = 1 - Math.pow(1 - p, 3);
+      out.textContent = fmt(target * e);
+      if(p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  /* ---------- reveals ---------- */
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(!en.isIntersecting) return;
+        en.target.classList.add("in");
+        en.target.querySelectorAll("[data-count]").forEach(run);
+        io.unobserve(en.target);
+      });
+    }, {rootMargin:"0px 0px -12% 0px", threshold:0.12});
+    document.querySelectorAll(".rv").forEach(function(el){ io.observe(el); });
+
+    /* nav active state */
+    var nav = {};
+    document.querySelectorAll(".links a").forEach(function(a){ nav[a.getAttribute("href").slice(1)] = a; });
+    var spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        var a = nav[en.target.id];
+        if(a && en.isIntersecting){
+          Object.keys(nav).forEach(function(k){ nav[k].classList.remove("on"); });
+          a.classList.add("on");
+        }
+      });
+    }, {rootMargin:"-45% 0px -50% 0px"});
+    ["work","about","practice","contact"].forEach(function(id){
+      var s = document.getElementById(id);
+      if(s) spy.observe(s);
+    });
+  }else{
+    document.querySelectorAll(".rv").forEach(function(el){ el.classList.add("in"); });
+    document.querySelectorAll("[data-count]").forEach(run);
+  }
+
+  /* ---------- start screen ---------- */
+  var splash = document.getElementById("splash");
+  function startSite(){
+    splash.classList.add("out");
+    document.documentElement.classList.remove("lock");
+    setTimeout(function(){ hero.classList.add("go"); }, 220);
+  }
+  if(reduce){
+    splash.classList.add("out");
+    hero.classList.add("go");
+  }else{
+    var t0 = Date.now(), began = false;
+    function toTop(){ if(!location.hash) window.scrollTo(0, 0); }
+    toTop();
+    document.documentElement.classList.add("lock");
+    function begin(){
+      if(began) return;
+      began = true;
+      toTop();
+      setTimeout(function(){ toTop(); startSite(); }, Math.max(0, 1800 - (Date.now() - t0)));
+    }
+    if(document.readyState === "complete") begin();
+    else window.addEventListener("load", begin);
+    setTimeout(begin, 3200);
+    window.addEventListener("pageshow", function(e){ if(e.persisted) toTop(); });
+  }
+
+  /* ---------- CV download inside the artifact viewer ---------- */
+  /* On a normal host the plain href downloads the file; inside the artifact
+     viewer a page may only hand over a file through the downloads capability. */
+  if(window.claude && typeof window.claude.use === "function"){
+    window.claude.use("downloads").then(function(dl){
+      if(!dl) return;
+      document.querySelectorAll("a[download]").forEach(function(a){
+        a.addEventListener("click", function(e){
+          e.preventDefault();
+          fetch(a.getAttribute("href")).then(function(r){
+            return r.blob();
+          }).then(function(blob){
+            return dl.save({ filename: "Pratyaksha_Mehrotra_CV.pdf", data: blob });
+          }).catch(function(){ /* declined or unavailable */ });
+        });
+      });
+    }).catch(function(){});
+  }
+
+  /* ---------- custom cursor ---------- */
+  if(!reduce && window.matchMedia("(hover: hover) and (pointer: fine)").matches){
+    var cur = document.createElement("div");
+    cur.className = "cursor";
+    document.body.appendChild(cur);
+    document.documentElement.classList.add("hide-cursor");
+    var tx = 0, ty = 0, cx = 0, cy = 0, seen = false;
+    window.addEventListener("pointermove", function(e){
+      if(e.pointerType && e.pointerType !== "mouse") return;
+      tx = e.clientX; ty = e.clientY;
+      if(!seen){ seen = true; cx = tx; cy = ty; cur.classList.add("on"); }
+    }, {passive:true});
+    document.addEventListener("mouseleave", function(){ cur.classList.remove("on"); });
+    document.addEventListener("mouseenter", function(){ if(seen) cur.classList.add("on"); });
+    document.addEventListener("pointerover", function(e){
+      var t = e.target && e.target.closest && e.target.closest("a,button");
+      cur.classList.toggle("big", !!t);
+    }, {passive:true});
+    (function frame(){
+      cx += (tx - cx) * 0.2;
+      cy += (ty - cy) * 0.2;
+      cur.style.transform = "translate(" + cx + "px," + cy + "px) translate(-50%,-50%)";
+      requestAnimationFrame(frame);
+    })();
+  }
+})();
+</script>
+
+</body>
+</html>
